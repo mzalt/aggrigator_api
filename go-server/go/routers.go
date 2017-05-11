@@ -40,127 +40,148 @@ var routes = Routes{
 	Route{
 		"Index",
 		"GET",
-		"//",
+		"/mzalt/swagger-petstore/1.0.0/",
 		Index,
 	},
 
 	Route{
-		"GetAppartment",
-		"GET",
-		"//appartment",
-		GetAppartment,
+		"AddPet",
+		"POST",
+		"/mzalt/swagger-petstore/1.0.0/pet",
+		AddPet,
 	},
 
 	Route{
-		"GetAppartmentsForBuilding",
-		"GET",
-		"//buildings/{id}/appartments",
-		GetAppartmentsForBuilding,
+		"DeletePet",
+		"DELETE",
+		"/mzalt/swagger-petstore/1.0.0/pet/{petId}",
+		DeletePet,
 	},
 
 	Route{
-		"GetBuilding",
+		"FindPetsByStatus",
 		"GET",
-		"//buildings",
-		GetBuilding,
+		"/mzalt/swagger-petstore/1.0.0/pet/findByStatus",
+		FindPetsByStatus,
 	},
 
 	Route{
-		"GetCompanies",
+		"FindPetsByTags",
 		"GET",
-		"//companies",
-		GetCompanies,
+		"/mzalt/swagger-petstore/1.0.0/pet/findByTags",
+		FindPetsByTags,
 	},
 
 	Route{
-		"GetCompanyLocation",
+		"GetPetById",
 		"GET",
-		"//companies/{id_company}/location",
-		GetCompanyLocation,
+		"/mzalt/swagger-petstore/1.0.0/pet/{petId}",
+		GetPetById,
 	},
 
 	Route{
-		"GetProfiles",
-		"GET",
-		"//profiles",
-		GetProfiles,
+		"UpdatePet",
+		"PUT",
+		"/mzalt/swagger-petstore/1.0.0/pet",
+		UpdatePet,
 	},
 
 	Route{
-		"GetTypes",
+		"UpdatePetWithForm",
+		"POST",
+		"/mzalt/swagger-petstore/1.0.0/pet/{petId}",
+		UpdatePetWithForm,
+	},
+
+	Route{
+		"UploadFile",
+		"POST",
+		"/mzalt/swagger-petstore/1.0.0/pet/{petId}/uploadImage",
+		UploadFile,
+	},
+
+	Route{
+		"DeleteOrder",
+		"DELETE",
+		"/mzalt/swagger-petstore/1.0.0/store/order/{orderId}",
+		DeleteOrder,
+	},
+
+	Route{
+		"GetInventory",
 		"GET",
-		"//User_types",
-		GetTypes,
+		"/mzalt/swagger-petstore/1.0.0/store/inventory",
+		GetInventory,
+	},
+
+	Route{
+		"GetOrderById",
+		"GET",
+		"/mzalt/swagger-petstore/1.0.0/store/order/{orderId}",
+		GetOrderById,
+	},
+
+	Route{
+		"PlaceOrder",
+		"POST",
+		"/mzalt/swagger-petstore/1.0.0/store/order",
+		PlaceOrder,
 	},
 
 	Route{
 		"CreateUser",
 		"POST",
-		"//users",
+		"/mzalt/swagger-petstore/1.0.0/user",
 		CreateUser,
 	},
 
 	Route{
-		"DeleteUserByid",
-		"DELETE",
-		"//users/{id}",
-		DeleteUserByid,
-	},
-
-	Route{
-		"DeleteUserVehiculesByid",
-		"DELETE",
-		"//users/{id}/vehicules/{idVehicule}",
-		DeleteUserVehiculesByid,
-	},
-
-	Route{
-		"GetUserByid",
-		"GET",
-		"//users/{id}",
-		GetUserByid,
-	},
-
-	Route{
-		"GetUserLives",
-		"GET",
-		"//users/{id}/lives",
-		GetUserLives,
-	},
-
-	Route{
-		"GetUserVehiculesByid",
-		"GET",
-		"//users/{id}/vehicules",
-		GetUserVehiculesByid,
-	},
-
-	Route{
-		"GetUsers",
-		"GET",
-		"//users",
-		GetUsers,
-	},
-
-	Route{
-		"PostUserVehiculesByid",
+		"CreateUsersWithArrayInput",
 		"POST",
-		"//users/{id}/vehicules",
-		PostUserVehiculesByid,
+		"/mzalt/swagger-petstore/1.0.0/user/createWithArray",
+		CreateUsersWithArrayInput,
+	},
+
+	Route{
+		"CreateUsersWithListInput",
+		"POST",
+		"/mzalt/swagger-petstore/1.0.0/user/createWithList",
+		CreateUsersWithListInput,
+	},
+
+	Route{
+		"DeleteUser",
+		"DELETE",
+		"/mzalt/swagger-petstore/1.0.0/user/{username}",
+		DeleteUser,
+	},
+
+	Route{
+		"GetUserByName",
+		"GET",
+		"/mzalt/swagger-petstore/1.0.0/user/{username}",
+		GetUserByName,
+	},
+
+	Route{
+		"LoginUser",
+		"GET",
+		"/mzalt/swagger-petstore/1.0.0/user/login",
+		LoginUser,
+	},
+
+	Route{
+		"LogoutUser",
+		"GET",
+		"/mzalt/swagger-petstore/1.0.0/user/logout",
+		LogoutUser,
 	},
 
 	Route{
 		"UpdateUser",
 		"PUT",
-		"//users/{id}",
+		"/mzalt/swagger-petstore/1.0.0/user/{username}",
 		UpdateUser,
-	},
-
-	Route{
-		"UpdateUserVehiculesByid",
-		"PUT",
-		"//users/{id}/vehicules/{idVehicule}",
-		UpdateUserVehiculesByid,
 	},
 
 }
